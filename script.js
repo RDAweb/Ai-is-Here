@@ -25,7 +25,7 @@ function wishMe(){
     }
 }
  window.addEventListener('load',()=>{
-    //wishMe()
+    wishMe()
 })
 let speechRecognition= window.SpeechRecognition || window.webkitSpeechRecognition 
 let recognition =new speechRecognition()
@@ -82,8 +82,35 @@ function takeCommand(message){
         speak(date)
       }
     else{
-        let finalText="this is what i found on internet regarding" + message.replace("shipra","") || message.replace("shifra","")
+        let finalText="this is what i found on internet regarding" + message.replace("Echo","") || message.replace("Echo","")
         speak(finalText)
-        window.open(`https://www.google.com/search?q=${message.replace("shipra","")}`,"_blank")
+        window.open(`https://www.google.com/search?q=${message.replace("Echo","")}`,"_blank")
     }
 }
+
+function setViewport() {
+    var viewportMeta = document.querySelector("meta[name='viewport']");
+
+    // Check the device type
+    if (window.innerWidth <= 600) {
+      // Mobile devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    } else if (window.innerWidth <= 1024) {
+      // Tablet devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    } else {
+      // Desktop devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    }
+    // Check the device type
+    if (window.innerWidth <= 1900) {
+      // Mobile devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    } else if (window.innerWidth <= 1948) {
+      // Tablet devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    } else {
+      // Desktop devices
+      viewportMeta.setAttribute("content", "width=device-width, initial-scale=0.4");
+    }
+  }
