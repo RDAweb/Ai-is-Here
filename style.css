@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .ecomain {
@@ -18,6 +19,7 @@
 
 .ehcomainstateplus {
     width: 100%;
+    margin: 0 auto;
 }
 
 body{
@@ -30,23 +32,8 @@ body{
     gap:30px;
     flex-direction: column;
     margin: 0 auto;
-    border: 2px solid rgba(230, 31, 31, 0.767);
-    animation: borderss 5s infinite;
 }
 
-@keyframes borderss{
-    0%{border-color: rgb(97, 134, 255);}
-    10%{border-color: rgb(97, 210, 255);}
-    20%{border-color: rgb(97, 255, 208);}
-    30%{border-color: rgb(97, 255, 144);}
-    40%{border-color: rgb(160, 107, 209);}
-    50%{border-color: rgb(255, 97, 97);}
-    60%{border-color: rgb(255, 142, 97);}
-    70%{border-color: rgb(255, 186, 97);}
-    80%{border-color: rgb(255, 244, 97);}
-    90%{border-color: rgb(221, 255, 98);}
-    1000%{border-color: rgb(115, 255, 97);}
-}
 #logo{
     width: 50vw;
 
